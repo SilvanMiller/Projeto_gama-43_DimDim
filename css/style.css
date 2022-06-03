@@ -1,0 +1,430 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  
+  font-family: 'Ubuntu', sans-serif;
+  
+  text-decoration:none;
+  list-style:none;
+}
+
+:root {
+  --colorSegundary: #2E948A;
+  --branco: #fff;
+  --colorPrimary: #FF4081;
+  --colorText: #555555;
+  --colorBGsite: #F6F6F6;
+  --colorDivisor: #c4c4c4; 
+
+}
+
+header {
+  width: 100%;
+  height: 8em;
+  background: var(--colorSegundary);
+  box-shadow: 0px 1px 8px 1px black;
+    
+  display:flex;  
+  align-items:center ;
+}
+
+.img {
+  display:flex;
+  justify-content: start;
+}
+
+ul li a{
+  color: var(--branco);
+  margin: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+ul li a:hover{
+  color: var(--colorText);
+  text-decoration: underline;  
+}
+
+.navbar{
+  display: flex;
+}
+
+button{
+  width: 12em;
+  font-size: 1em;
+  padding: 0.6em;
+  margin: 0.3em ;
+  cursor: pointer;
+  border-radius:50px;
+}
+
+/* CSS PAGINA INDEX */
+main{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  
+  align-items: center;
+}
+
+main aside img{
+  
+  height: 22em;
+  margin: 2em 0;
+}
+
+main article section{
+  width: 80%;
+  height: 50%;
+  font-weight: 700;
+  text-align: start;
+}
+
+main article section h1{
+  color: var(--colorPrimary);
+  font-size: 2.6em;
+  padding-bottom: 0.2em;
+}
+
+main article section p{
+  font-weight: 400;
+  padding-bottom: 0.2em;
+}
+
+main article section button{
+  color: var(--colorPrimary);
+  border:solid 2px var(--colorPrimary); 
+
+  background: linear-gradient(to right, var(--colorPrimary) 50%, var(--branco) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out; 
+    align-items: center; 
+}
+
+main article section button:hover{
+  color: var(--branco);
+  border:solid 2px var(--branco);
+  background-position: left bottom;
+}
+
+h3{
+  color: var(--colorSegundary);
+}
+
+.cardPost{
+  height: auto;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.col{
+  width: 20em;
+  align-items: center;
+}
+
+.elementos{
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.recomendacao {
+  margin-top: 4em;
+  width: 27em;
+  height: auto;
+  margin: 2em 0 0 5%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.msg {
+  font-size: 1em;
+  margin-left: 2em;
+}
+
+/* CSS PAGINA CONTATO */
+ h2{
+  color: var(--colorPrimary);
+  font-weight: 700;
+  
+}
+
+label{
+    display: block;
+    margin-bottom: 1em;
+}
+
+input, textarea{
+    padding: 0.8em;
+    width: 30em;
+    font-size: 0.8em;
+
+    border: 1px solid var(--colorText);
+    border-radius: 5px;
+    outline: 1;
+}
+
+textarea {
+    height: 10em;
+    resize: none;
+}
+
+main article form button{
+  color: var(--branco);
+  border: 0;
+  background: var(--colorPrimary);
+
+  background: linear-gradient(to right, var(--branco) 50%, var(--colorPrimary) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out; 
+}
+main article form button:hover {
+  color: var(--colorPrimary);
+  border:solid 2px var(--colorPrimary);
+  background-position: left bottom;
+}
+
+
+/* CSS PAGINA POST */
+main article h1{
+  color: var(--colorPrimary);
+  font-size: 2em;
+  font-weight: 500;
+  padding-top: 1.8em;
+
+  text-align: center;
+}
+
+main article h6{
+  color: var(--colorBg);
+  text-align: center;
+  font-weight: 400;
+}
+
+main article img{
+  width: 73vw;
+  height: 25em;
+  padding: 4em 0 2em 0;
+  
+  display: block;
+  align-items:center;
+}
+
+main article section p{
+  display: block;
+  text-align: justify;
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+
+main article section h3{
+  color: var(--colorSegundary); 
+}
+
+section h2{
+  color: var(--colorPrimary);
+  display: block;
+  text-align: center;
+}
+
+.containerBG{
+  background-color: var(--colorBGsite);
+  width: 100%;
+  padding: 1em 1em;
+}
+
+.container{
+  width: 100%;
+  padding: 3em 0;
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;  
+}
+
+
+section .container p {
+  width: 16em;
+  text-align: center;
+  margin: 1em 1;
+}
+section  button {
+  margin-top: 1em;
+  
+}
+
+button.btnPost{
+  align-items: center;
+  color: var(--branco);
+  border: solid 2px var(--colorPrimary);
+  background: var(--colorPrimary);
+
+  background: linear-gradient(to right, var(--branco) 50%, var(--colorPrimary) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out; 
+}
+button.btnPost:hover {
+  color: var(--colorPrimary);
+  border:solid 2px var(--colorPrimary);
+  background-position: left bottom;
+}
+
+/* CSS PAGINA CURSOS */
+.titleRs{
+  width: 10em;
+  font-size: 2em;
+  color: var(--colorPrimary);
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+.dividir {
+    width: 90%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 5px;
+    background: var(--colorDivisor)
+}
+
+
+/* CSS PAGINA BLOG */
+.line{
+  flex: 1;
+}
+.titleVrd{
+  width: 10em;
+  font-size: 2em;
+  color: var(--colorSegundary);
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+.mediumTitle {
+    width: 20em;
+    font-weight: 400;
+    font-size: 1em;
+    padding-bottom: 2em;
+    color: var(--colorText);
+
+    text-align: start;
+}
+.blogVrd{
+  margin: 1em 0;
+  color: var(--colorPrimary)
+}
+
+/* CSS PAGINA CURSO */
+.titleRs.line{
+  width: auto;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+/* -- RODAPE -- */
+footer {
+  width:100%;
+  height:10em;
+  margin:0 auto;
+  font-size: 1em;
+  
+
+  background: var(--colorSegundary);  
+  color: var(--branco);   
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer img {
+  margin-left: 1em;
+  width: 19em;
+  height: 6em;
+}
+
+footer section button{
+  background: var(--colorSegundary);
+  border:solid 2px var(--branco);
+
+  background: linear-gradient(to right, var(--branco) 50%, var(--colorSegundary) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out; 
+  
+  display: inline-block;
+  justify-content: center;
+  align-items:center;  
+}
+
+footer button:hover  {
+  border:solid 2px var(--colorSegundary);
+  font-weight: 400;
+  background-position: left bottom;
+}
+
+footer button a{
+color: var(--branco);
+}
+
+footer button a:hover{
+color: var(--colorSegundary);
+font-weight: 700;
+}
+
+
+nav ul li a {
+  font-weight: 400;
+}
+
+@media only screen and (max-width:630px) {
+  header  {
+    display: flex;
+    flex-wrap:wrap;
+    
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8em;
+  }
+  main aside img{
+      display: none;
+    }
+  main article section{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 2em ;
+  }
+  footer {
+      width: 100%;
+      margin:0 auto;
+      height: 20em;
+      font-size: 0.8em;
+      padding: 1em 0;
+        
+      display:flex;
+      flex-wrap: wrap;
+      text-align: center;
+        
+  }
+  .btnFooter{
+      display: block;
+      flex-wrap: wrap;
+      text-align: center;
+      padding-top: 0.5em; 
+    }
+
+}  
